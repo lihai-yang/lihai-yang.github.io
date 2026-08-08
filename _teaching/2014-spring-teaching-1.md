@@ -1,10 +1,10 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Assistant for Wenji Xu (Industrial Organization)"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
+venue: "City University of Hong Kong"
+date: 2022 Spring, 2023 Spring, 2024 Spring
 location: "City, Country"
 ---
 
