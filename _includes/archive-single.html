@@ -43,20 +43,30 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i> </p>
-        {% elsif post.collection == 'publications' %}          
+    {% if post.collection == 'teaching' %}
+      <p> {{ post.type }}, <i>{{ post.venue }}</i> </p>
+    {% elsif post.collection == 'publications' %}
+      {% if post.status or post.venue or post.conferences %}
+        <div style="margin-top: 0.25em; line-height: 1.2;">
           {% if post.status %}
-            <strong>{{ post.status }}</strong>
+            <div><strong>{{ post.status }}</strong></div>
           {% elsif post.venue %}
-            <strong> {{ post.venue }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+            <div>
+              <strong>{{ post.venue }}</strong>, 
+              {% if post.date %}
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+              {% endif %}
+            </div>
           {% endif %}
 
           {% if post.conferences %}
-            <br>
-            <em>Presentations:</em> {{ post.conferences }}
+            <div style="margin-top: 2px;"><em>Presentations:</em> {{ post.conferences }}</div>
           {% endif %}
-       {% endif %}
+        </div>
+      {% endif %}
+    {% elsif post.date %}
+      <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% endif %}
 
   </article>
 </div>
