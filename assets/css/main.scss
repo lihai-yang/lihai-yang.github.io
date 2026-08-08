@@ -38,7 +38,7 @@
     "layout/json_cv"
 ;
 
-/* 1. Force standard body text, headers, and archive items to Times New Roman */
+/* 1. Global Font Family */
 body, 
 h1, h2, h3, h4, h5, h6,
 .archive__item-title,
@@ -47,19 +47,34 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Times New Roman", Times, Georgia, serif !important;
 }
 
-/* 2. Style publication title links and author links to match reference image */
-a,
+/* 2. Paper Titles ONLY (Blue, Bold & Underlined) */
 .archive__item-title a,
-.page__content a {
+h3.archive__item-title a,
+.page__content h3 a {
   font-family: "Times New Roman", Times, Georgia, serif !important;
-  color: #005f73;
-  text-decoration: underline;
-  font-weight: bold;
+  color: #005f73 !important;
+  text-decoration: underline !important;
+  font-weight: bold !important;
 }
 
-/* 3. Link hover state */
-a:hover,
+/* 3. Paper Titles Hover State */
 .archive__item-title a:hover,
-.page__content a:hover {
-  color: #0a9396;
+.page__content h3 a:hover {
+  color: #0a9396 !important;
+}
+
+/* 4. Author Names & Paragraph Links (Black, Regular Weight, NO Underline) */
+.page__content p a,
+.archive__item-excerpt a,
+.archive__item-body a {
+  color: #000000 !important;
+  text-decoration: none !important;
+  font-weight: normal !important;
+}
+
+/* 5. Author Names Hover State (Keep NO Underline) */
+.page__content p a:hover,
+.archive__item-excerpt a:hover {
+  color: #333333 !important;
+  text-decoration: none !important;
 }
