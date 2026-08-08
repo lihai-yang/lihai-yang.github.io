@@ -1,10 +1,10 @@
 ---
-title: "Teaching Assistant for Jun Cai (Advanced Corporate Finance)"
+title: "Teaching Assistant for Wenji Xu (Microeconomics)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/2016-spring-teaching-2
 venue: "City University of Hong Kong"
-date: 2026 Spring
+date: 2022 Fall, 2023 Fall
 location: "City, Country"
 ---
 
