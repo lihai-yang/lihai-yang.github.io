@@ -37,3 +37,29 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* 1. Force standard body text, headers, and archive items to Times New Roman */
+body, 
+h1, h2, h3, h4, h5, h6,
+.archive__item-title,
+.archive__item-excerpt,
+.page__content {
+  font-family: "Times New Roman", Times, Georgia, serif !important;
+}
+
+/* 2. Style publication title links and author links to match reference image */
+a,
+.archive__item-title a,
+.page__content a {
+  font-family: "Times New Roman", Times, Georgia, serif !important;
+  color: #005f73;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* 3. Link hover state */
+a:hover,
+.archive__item-title a:hover,
+.page__content a:hover {
+  color: #0a9396;
+}
