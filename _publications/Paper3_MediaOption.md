@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Media Coverage, Volatility Overreaction, and Option Returns"
 collection: publications
 category: working paper
 permalink: /publication/2009-10-01-paper-title-number-1
