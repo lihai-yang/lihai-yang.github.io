@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 4"
+title: "Peer Option Momentum"
 collection: publications
 category: working paper
 permalink: /publication/2024-02-17-paper-title-number-4
