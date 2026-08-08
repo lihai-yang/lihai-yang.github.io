@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2015-spring-teaching-2
 venue: "City University of Hong Kong"
-date: 2026 Spring
+date: 2015-09-01
 location: "City, Country"
 ---
 
