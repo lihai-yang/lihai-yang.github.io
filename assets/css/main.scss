@@ -38,43 +38,34 @@
     "layout/json_cv"
 ;
 
-/* 1. Global Font Family */
-body, 
-h1, h2, h3, h4, h5, h6,
-.archive__item-title,
-.archive__item-excerpt,
-.page__content {
+/* 1. Force global Times New Roman */
+html, body, p, div, span, li, h1, h2, h3, h4, h5, h6, a {
   font-family: "Times New Roman", Times, Georgia, serif !important;
 }
 
 /* 2. Paper Titles ONLY (Blue, Bold & Underlined) */
 .archive__item-title a,
 h3.archive__item-title a,
-.page__content h3 a {
-  font-family: "Times New Roman", Times, Georgia, serif !important;
+.page__content h3 a,
+.archive__item-title {
   color: #005f73 !important;
   text-decoration: underline !important;
   font-weight: bold !important;
 }
 
-/* 3. Paper Titles Hover State */
-.archive__item-title a:hover,
-.page__content h3 a:hover {
-  color: #0a9396 !important;
-}
-
-/* 4. Author Names & Paragraph Links (Black, Regular Weight, NO Underline) */
-.page__content p a,
+/* 3. Author Links & Body Links (Black, Regular Weight, NO Underline) */
 .archive__item-excerpt a,
-.archive__item-body a {
+.archive__item-body a,
+.archive__item a:not(.archive__item-title a),
+.page__content a:not(.archive__item-title a) {
   color: #000000 !important;
   text-decoration: none !important;
   font-weight: normal !important;
 }
 
-/* 5. Author Names Hover State (Keep NO Underline) */
-.page__content p a:hover,
-.archive__item-excerpt a:hover {
+/* 4. Ensure hover state for authors stays non-underlined */
+.archive__item a:not(.archive__item-title a):hover,
+.page__content a:not(.archive__item-title a):hover {
   color: #333333 !important;
   text-decoration: none !important;
 }
