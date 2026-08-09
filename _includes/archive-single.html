@@ -39,7 +39,7 @@
     </h2>
 
     {% if post.collection == 'publications' and post.coauthors %}
-      <span class="coauthors">, with {{ post.coauthors | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      <span class="coauthors">with {{ post.coauthors}}</span>
     {% endif %}
     
     {% if post.read_time %}
