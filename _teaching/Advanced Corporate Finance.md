@@ -2,8 +2,6 @@
 title: "Teaching Assistant for Jun Cai (Advanced Corporate Finance)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/Advanced Corporate Finance
 venue: "City University of Hong Kong"
+semester: 2026 Spring
 ---
-
-2026 Spring.
