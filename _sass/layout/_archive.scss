@@ -243,32 +243,3 @@
     }
   }
 }
-
-/* Target coauthors wrapper and any links inside it */
-.archive__item-title .coauthors {
-  color: #000000 !important;
-  text-decoration: none !important;
-  display: inline !important; /* Prevents wrapping to a new line */
-
-  a {
-    color: #000000 !important;
-    text-decoration: none !important;
-    display: inline !important; /* Keeps individual coauthor links on the same line */
-
-    &:hover {
-      color: #000000 !important;
-      text-decoration: none !important;
-    }
-  }
-}
-
-/* Prevent parent row hover from triggering underlines on coauthor links */
-.archive__item:hover .archive__item-title .coauthors {
-  color: #000000 !important;
-  text-decoration: none !important;
-
-  a {
-    color: #000000 !important;
-    text-decoration: none !important;
-  }
-}
