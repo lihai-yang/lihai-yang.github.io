@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a finance PhD student from City University of Hong Kong. My research focuses on empirical asset pricing and behavioral finance, with interests including option, corporate bond, network, and news media.
+I'm a finance PhD student from City University of Hong Kong. My research focuses on empirical asset pricing and behavioral finance, with particular emphasis on options, corporate bonds, news media, and spillovers across firm networks. I'm on the 2026/2027 job market.
 
 You can find my CV here:
 
