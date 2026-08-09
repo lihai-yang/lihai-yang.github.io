@@ -39,7 +39,7 @@
     </h2>
 
     {% if post.collection == 'publications' and post.coauthors %}
-      with {{ post.coauthors}}
+      {{ post.coauthors}}
     {% endif %}
     
     {% if post.read_time %}
