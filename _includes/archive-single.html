@@ -28,7 +28,7 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'teaching' %}
-        {{ title }}
+        <span style="color: black; text-decoration: none;">{{ title }}</span>
       {% elsif post.paperurl %}
         <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
       {% elsif post.link %}
@@ -38,7 +38,7 @@
       {% endif %}
     
       {% if post.collection == 'publications' and post.coauthors %}
-        , with {{ post.coauthors }}
+        <span style="color: black; text-decoration: none;">, with {{ post.coauthors }}</span>
       {% endif %}
     </h2>
     
