@@ -50,7 +50,7 @@
       <p> {{ post.type }}, <i>{{ post.venue }}</i> </p>
     {% elsif post.collection == 'publications' %}
       {% if post.status or post.venue or post.conferences %}
-        <div style="margin-top: 0.25em; line-height: 1.2;">
+        <div style="margin-top: 0.5em; line-height: 1.2;">
           {% if post.status %}
             <div><strong>{{ post.status }}</strong></div>
           {% elsif post.venue %}
@@ -63,7 +63,7 @@
           {% endif %}
 
           {% if post.conferences %}
-            <div style="margin-top: 2px;"><em>Presentations:</em> {{ post.conferences }}</div>
+            <div style="margin-top: 0.5em;"><em>Presentations:</em> {{ post.conferences }}</div>
           {% endif %}
         </div>
       {% endif %}
