@@ -62,6 +62,10 @@
             </div>
           {% endif %}
 
+          {% if post.more %}
+            <div style="margin-top: 0.5em;">({{ post.more }})</div>
+          {% endif %}
+          
           {% if post.conferences %}
             <div style="margin-top: 0.5em;"><em>Presentations:</em> {{ post.conferences }}</div>
           {% endif %}
