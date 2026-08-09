@@ -38,6 +38,10 @@
       {% endif %}
     </h2>
 
+    {% if post.collection == 'publications' and post.chinese %}
+      ({{ post.chinese }})
+    {% endif %}
+    
     {% if post.collection == 'publications' and post.coauthors %}
       {{ post.coauthors}}
     {% endif %}
@@ -51,10 +55,6 @@
     {% elsif post.collection == 'publications' %}
       {% if post.status or post.venue or post.conferences %}
         <div style="margin-top: 0.5em; line-height: 1.2;">
-          {% if post.chinese %}
-            <div>({{ post.chinese }})</div>
-          {% endif %}
-          
           {% if post.status %}
             <div><strong>{{ post.status }}</strong></div>
           {% elsif post.venue %}
