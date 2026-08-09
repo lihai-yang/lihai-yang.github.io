@@ -243,3 +243,14 @@
     }
   }
 }
+
+/* Add the coauthors fix right here at the very end */
+.archive__item-title .coauthors {
+  color: #000000 !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.archive__item:hover .archive__item-title .coauthors {
+  text-decoration: none !important;
+}
