@@ -20,7 +20,8 @@ author_profile: true
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2 {% unless forloop.parentloop.first %}style="margin-top: 3.5em;"{% endunless %}>{{ category[1].title }}</h2><hr />
+        <h2 style="margin-bottom: 0; {% unless forloop.parentloop.first %}margin-top: 3.5em;{% endunless %}">{{ category[1].title }}</h2>
+        <hr style="margin-top: 0.3em; margin-bottom: 0.5em;" />
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}
