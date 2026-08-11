@@ -5,5 +5,5 @@ category: working paper
 paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4880869"
 coauthors: 'with <a href="https://www.cb.cityu.edu.hk/staff/jwang2/" target="_blank" rel="noopener noreferrer">Junbo Wang</a> and <a href="https://www.cb.cityu.edu.hk/staff/woodywu/" target="_blank" rel="noopener noreferrer">Di Wu</a>'
 status: "Conditionally Accepted at Journal of Financial and Quantitative Analysis"
-conferences: "2023 Chinese Financial Annual Meeting; 2023 PolyU Fixed Income and Institutions Research Symposium (PhD poster session); 2024 Conference of the International Association for Applied Econometrics"
+conferences: "2023 Chinese Financial Annual Meeting; 2023 PolyU Fixed Income and Institutions Research Symposium (Ph.D. poster session); 2024 Conference of the International Association for Applied Econometrics"
 ---
