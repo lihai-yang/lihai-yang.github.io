@@ -73,6 +73,15 @@
           {% if post.conferences %}
             <div style="margin-top: 0.5em;"><em>Presentations:</em> {{ post.conferences }}</div>
           {% endif %}
+
+          {% if post.abstract %}
+            <details style="cursor: pointer; margin-top: 6px;">
+              <summary style="color: #0066cc; font-weight: 500;"><b>[ Abstract ]</b></summary>
+              <blockquote style="margin-top: 8px; font-size: 0.9em; color: #444;">
+                {{ post.abstract }}
+              </blockquote>
+            </details>
+          {% endif %}
         </div>
       {% endif %}
     {% elsif post.date %}
