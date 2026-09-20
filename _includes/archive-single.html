@@ -36,6 +36,10 @@
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
+
+      {% if post.pdfurl %}
+        <a href="{{ post.pdfurl }}" class="btn btn--small" style="margin-left: 8px; vertical-align: middle;">PDF</a>
+      {% endif %}
     </h2>
 
     {% if post.collection == 'publications' and post.chinese %}
